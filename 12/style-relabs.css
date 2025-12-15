@@ -6,7 +6,9 @@ div#modry{
     background-color: blue;
     width: 500px ;
     height: 500px ;
-
+    position: absolute;
+    top: 500PX; 
+    left: 300PX;
 } 
 
 div#cerveny{
@@ -14,7 +16,9 @@ div#cerveny{
     background-color: rgb(255, 0, 0);
     width: 100px ;
     height: 100px ;
-
+    position: absolute;
+    top: 50px;
+    left: 50px;
 } 
 
 div#zluty{
@@ -22,5 +26,7 @@ div#zluty{
     background-color: rgb(255, 217, 0);
     width: 250px ;
     height: 250px ;
-
+    position: absolute;
+    top: 100PX;
+    left: 400PX;
 } 
