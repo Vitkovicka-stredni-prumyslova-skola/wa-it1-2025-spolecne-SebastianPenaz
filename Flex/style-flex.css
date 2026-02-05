@@ -12,9 +12,14 @@ body {
   padding: 10px;
   height: auto;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+
+
+
 }
 
 .item {
@@ -22,4 +27,23 @@ body {
   border: 2px solid blue;
   padding: 20px;
   font-size: 24px;
+  
+  /*flex-grow: 0;
+  flex-basis: 150px;*/
+
+  flex: 1 1 200px;
+
+
+}
+
+.item:nth-child(1){
+
+flex-grow: 1;
+
+}
+
+.item:nth-child(2){
+
+flex-grow: 2;
+
 }
