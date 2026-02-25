@@ -1,0 +1,24 @@
+.box{
+
+    background-color: lightcoral ;
+    text-align: center;
+    padding: 20px;
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 6px;
+
+}
+
+
+.container{
+
+    display: grid;
+    grid-template-columns: 1fr 2fr 2fr 1fr ;
+    gap: 30px;
+    
+}
+
+.box:nth-child(odd) {
+
+    background-color: lightgoldenrodyellow;
+
+}
