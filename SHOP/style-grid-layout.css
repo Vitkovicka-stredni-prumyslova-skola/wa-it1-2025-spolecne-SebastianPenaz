@@ -1,0 +1,141 @@
+.container{
+
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(6, 100px);
+    gap: 10px;
+
+    grid-template-areas: 
+    "header header header header header"
+    "nav main main main box1 "
+    "nav main main main box2 "
+    "nav main main main box3 "
+    ". box4 box5 box6 ."
+    "footer footer footer footer footer"
+     ;
+
+}
+
+
+
+header{
+
+    background-color: cyan;
+    grid-area: header;
+    border-radius: 6px;
+    border: 2px solid rgb(177, 177, 177);
+}
+
+nav{
+
+    background-color: darkcyan;
+    grid-area: nav;
+      border-radius: 6px;
+    border: 2px solid rgb(177, 177, 177);
+
+}
+
+main{
+
+    background-color: darkturquoise;
+    grid-area: main;
+       border-radius: 6px;
+    border: 2px solid rgb(177, 177, 177);
+
+}
+
+
+footer{
+
+    background-color: lightblue;
+    grid-area: footer;
+    border-radius: 6px;
+    border: 2px solid rgb(177, 177, 177);
+
+}
+
+
+.box1{
+
+    background-color: lightgray;
+    grid-area: box1;
+    border-radius: 6px;
+    border: 2px solid gray;
+
+}
+
+.box2{
+
+    background-color: lightgray;
+    grid-area: box2;
+    border-radius: 6px;
+    border: 2px solid gray;
+
+}
+
+.box3{
+
+    background-color: lightgray;
+    grid-area: box3;
+    border-radius: 6px;
+    border: 2px solid gray;
+
+}
+
+.box4{
+
+    background-color: lightgray;
+    grid-area: box4;
+    border-radius: 6px;
+    border: 2px solid gray;
+
+}
+
+.box5{
+
+    background-color: lightgray;
+    grid-area: box5;
+    border-radius: 6px;
+    border: 2px solid gray;
+
+}
+
+.box6{
+
+    background-color: lightgray;
+    grid-area: box6;
+    border-radius: 6px;
+    border: 2px solid gray;
+
+}
+
+@media (max-width: 768px){
+
+    .container{
+
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(12, 100px);
+    gap: 10px;
+   
+
+    grid-template-areas: 
+        "header"
+        "nav"
+        "main"
+        "main"
+        "main"
+        "box1"
+        "box2"
+        "box3"
+        "box4"
+        "box5"
+        "box6"
+        "footer"
+     ;
+
+}
+
+
+
+}
