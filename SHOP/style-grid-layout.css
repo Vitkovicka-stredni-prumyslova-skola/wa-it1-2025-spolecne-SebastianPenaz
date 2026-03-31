@@ -1,15 +1,42 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+
+}
+
+
+
+/*Desktopové menu*/
+
+.menu{
+    list-style: none;
+}
+
+.menu li a{
+    text-decoration: none;
+    color: black;
+    background-color: white;
+
+
+}
+
+
+
 .container{
 
     display: grid;
     grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: repeat(6, 100px);
+    grid-template-rows: repeat(7, 100px);
     gap: 10px;
 
     grid-template-areas: 
     "header header header header header"
-    "nav main main main box1 "
-    "nav main main main box2 "
-    "nav main main main box3 "
+    ". nav nav nav . "
+    ". main main main box1 "
+    ". main main main box2 "
+    ". main main main box3 "
     ". box4 box5 box6 ."
     "footer footer footer footer footer"
      ;
