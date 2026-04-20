@@ -17,7 +17,7 @@
 .menu li a{
     text-decoration: none;
     color: black;
-    background-color: white;
+    
 
 
 }
@@ -57,19 +57,36 @@ nav{
 
     background-color: darkcyan;
     grid-area: nav;
-      border-radius: 6px;
+    border-radius: 6px;
     border: 2px solid rgb(177, 177, 177);
 
 }
 
-main{
+
+
+
+.main1{
 
     background-color: darkturquoise;
     grid-area: main;
-       border-radius: 6px;
+    border-radius: 6px;
     border: 2px solid rgb(177, 177, 177);
+    display: grid;
+    grid-template-columns: repeat(1, 50px);
+    grid-template-rows: repeat(5, 50px);
+    grid-template-areas: 
+        "card card card card card"
+    ;
+    gap: 10px;
+    text-align: left;
+    
+    
+    
+    
+    
 
 }
+
 
 
 footer{
@@ -135,6 +152,123 @@ footer{
     border: 2px solid gray;
 
 }
+
+
+
+
+
+body {
+
+   font-family: sans-serif;
+   
+
+}
+
+
+
+.products{
+
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4px;
+
+}
+
+.card{
+
+    background-color: white;
+    border: 2px solid #ddd;
+    border-radius: 12px;
+    
+    grid-area: card;
+    padding: 8px;
+    
+  
+}
+
+.card2{
+
+    background-color: white;
+    border: 2px solid #ddd;
+    border-radius: 12px;
+    
+    grid-area: card2;
+    padding: 8px;
+    
+    
+    
+    
+}
+
+.card3{
+
+    background-color: white;
+    border: 2px solid #ddd;
+    border-radius: 12px;
+    
+    grid-area: card3;
+    padding: 8px;
+    
+    
+    
+}
+
+
+.card4{
+
+    background-color: white;
+    border: 2px solid #ddd;
+    border-radius: 12px;
+    padding: 8px;
+    grid-area: card4;
+    
+    
+}
+
+.card5{
+
+    background-color: white;
+    border: 2px solid #ddd;
+    border-radius: 12px;
+    padding: 8px;
+    
+    grid-area: card5;
+    
+    
+}
+
+.btn{
+
+    background-color: rgb(141, 141, 155);
+    border: 1px solid black;
+    border-radius: 12px ;
+    height: 28px;
+    width: 60px;
+    margin: auto;
+    padding-bottom: auto;
+    margin-bottom: 6px;
+    text-align: center;
+    font-size: 12px;
+
+}
+
+.price{
+
+    font-display: block;
+
+}
+
+.thumb{
+
+    display: flex;
+    height: 50px;
+
+
+}
+
+
+
+
 
 @media (max-width: 768px){
 
