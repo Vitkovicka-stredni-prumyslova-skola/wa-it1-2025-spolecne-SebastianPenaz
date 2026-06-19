@@ -1,0 +1,160 @@
+.container{
+
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(5, 100px);
+    gap: 10px;
+    background-color: rgb(240, 240, 240);
+    border-radius: 6px;
+    padding: 40px;
+    
+
+    grid-template-areas:
+
+        "Logo Menu Menu Menu"
+        "Hero Hero Hero Sidebar"
+        "Hero Hero Hero Sidebar"
+        "Karta1 Karta2 Karta3 Sidebar"
+        "Footer Footer Footer Footer"
+    
+    ;
+    
+
+}
+
+
+
+.box1{
+
+    grid-area: Logo ;
+    background-color:  rgb(247, 178, 50);
+    border-radius: 6px ;
+    border: 2px solid rgb(48, 48, 48);
+    text-align: center;
+    font-size: 40px;
+    padding: 25px;
+
+}
+
+.box2{
+
+
+    grid-area: Menu ;
+    background-color: lightblue ;
+    border-radius: 6px ;
+    border: 2px solid rgb(48, 48, 48);
+    text-align: center;
+    font-size: 40px;
+    padding: 25px;
+    
+}
+
+.box3{
+
+
+    grid-area: Hero ;
+    background-color: lightcoral;
+    border-radius: 6px ;
+    border: 2px solid rgb(48, 48, 48);
+    text-align: center;
+    font-size: 40px;
+    padding: 80px;
+    
+    
+}
+
+
+.box7{
+
+    grid-area: Sidebar ;
+    background-color: plum ;
+    border-radius: 6px ;
+    border: 2px solid rgb(48, 48, 48);
+    text-align: center;
+    font-size: 40px;
+    padding: 140px;
+    
+    
+}
+
+.box4{
+
+    grid-area: Karta1 ;
+    background-color: lightgreen ;
+    border-radius: 6px ;
+    border: 2px solid rgb(48, 48, 48);
+    text-align: center;
+    font-size: 40px;
+    padding: 25px;
+
+    
+}
+
+.box5{
+
+    grid-area: Karta2 ;
+    background-color: lightgreen ;
+    border-radius: 6px ;
+    border: 2px solid rgb(48, 48, 48);
+    text-align: center;
+    font-size: 40px;
+    padding: 25px;
+}
+
+.box6{
+
+    grid-area: Karta3 ;
+    background-color: lightgreen ;
+    border-radius: 6px ;
+    border: 2px solid rgb(48, 48, 48);
+    text-align: center;
+    font-size: 40px;
+    padding: 25px;
+
+    
+}
+
+
+.box8{
+
+    grid-area: Footer ;
+    background-color: lightgray ;
+    border-radius: 6px ;
+    border: 2px solid rgb(48, 48, 48);
+    font-size: 40px;
+    padding: 25px;
+    text-align: center;
+    
+    
+}
+
+
+@media (max-width: 768px){
+
+    .container{
+
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(12, 100px);
+    gap: 10px;
+   
+
+    grid-template-areas: 
+        
+        "Logo"
+        "Menu"
+        "Hero"
+        "Karta1"
+        "Karta2"
+        "Karta3"
+        "Sidebar"
+        "footer"
+        
+     ;
+
+}
+
+
+
+}
+
